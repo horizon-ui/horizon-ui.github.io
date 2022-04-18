@@ -20,86 +20,127 @@
 
 */
 
-import React from "react";
 // Chakra imports
 import {
-  Flex,
-  Grid,
   Box,
   Button,
+  Flex,
+  Grid,
   Icon,
+  Image,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-// Custom components
-import heroBg from "assets/img/pro/hero/heroBg.png";
+import heroImageDark from "assets/img/pro/hero/hero-image-dark.png";
+import heroImageLight from "assets/img/pro/hero/hero-image-light.png";
+import heroBgDark from "assets/img/pro/hero/heroBgDark.png";
+// Assets
+import heroBgLight from "assets/img/pro/hero/heroBgLight.png";
 import {
-  FigmaLogo,
   ChakraLogo,
+  FigmaLogo,
   ReactLogo,
   TailwindLogo,
 } from "components/icons/Icons";
 import { MdChevronRight } from "react-icons/md";
+// Custom components
+import { VSeparator } from "components/separator/Separator";
 import InnerContent from "layouts/innerContent";
+import React from "react";
 
-export default function Default() {
+export default function Hero() {
+  const background = useColorModeValue(heroBgLight, heroBgDark);
+  const heroImage = useColorModeValue(heroImageLight, heroImageDark);
   // Chakra Color Mode
   const textColor = useColorModeValue("secondaryGray.900", "white");
+  const textColorSecondary = useColorModeValue("secondaryGray.700", "white");
   return (
     <Flex
       w='100%'
       direction={{ base: "column", xl: "row" }}
-      pt={{ base: "130px", md: "80px", xl: "80px" }}
-      bgImage={heroBg}
-      bgSize='cover'>
-      <InnerContent>
+      pt={{
+        base: "130px",
+        md: "140px",
+        xl: "190px",
+        "2xl": "210px",
+        "3xl": "250px",
+      }}
+      pb={{ base: "0px", lg: "80px", xl: "170px" }}
+      overflow='hidden'
+      bgImage={background}
+      bgPosition={{ base: "top", lg: "unset" }}
+      bgSize='cover'
+      position='relative'>
+      <InnerContent px={{ base: "20px", md: "40px", xl: "0px" }}>
         <Flex direction='column' width='stretch'>
-          <Box maxW='60%'>
-            <Text color={textColor} fontSize='46px' mb='30px'>
-              Most trendiest, complex and innovative{" "}
+          <Box maxW={{ base: "100%", lg: "60s%" }}>
+            <Text
+              color={textColor}
+              fontSize={{ base: "26px", md: "38px", xl: "46px" }}
+              mb='30px'>
+              Trendiest Open Source
+              <br />
               <Text as='span' fontWeight='700'>
-                Admin Template for Chakra UI & React
+                Admin Template for React
               </Text>
             </Text>
-            <Text color={textColor} fontSize='lg' w='70%' mb='30px'>
-              Build your dream web app with Horizon UI PRO, the most trendiest &
-              innovative admin dashboard for Chakra UI!
+            <Text
+              color={textColorSecondary}
+              fontSize='lg'
+              w={{ base: "100%", md: "70%" }}
+              mb='30px'>
+              Start building your dashboard with Horizon UI, the most trendiest
+              Open Source Admin Template for Chakra UI & React!
             </Text>
-            <Flex align='center'>
+            <Flex align='center' mb='30px'>
               <Button
                 py='20px'
                 px='16px'
                 fontSize='sm'
                 variant='brand'
                 borderRadius='12px'
-                me='30px'
+                me={{ base: "20px", md: "30px" }}
                 w='160px'
                 h='54px'>
                 Get Horizon PRO
+                <Icon as={MdChevronRight} color='white' h='16px' w='16px' />
               </Button>
-              <Icon as={MdChevronRight} color='white' h='16px' w='16px' />
               <Icon
                 as={ChakraLogo}
                 color={textColor}
                 w='24px'
                 h='24px'
-                me='25px'
+                me={{ base: "14px", md: "25px" }}
               />
               <Icon
                 as={ReactLogo}
                 color={textColor}
                 w='26px'
                 h='24px'
-                me='25px'
+                me={{ base: "14px", md: "25px" }}
               />
               <Icon
                 as={FigmaLogo}
                 color={textColor}
                 w='18px'
                 h='25px'
-                me='20px'
+                me={{ base: "14px", md: "20px" }}
               />
               <Icon as={TailwindLogo} color={textColor} w='39px' h='23px' />
+            </Flex>
+            <Flex align='center'>
+              <Text
+                color={textColorSecondary}
+                fontWeight='700'
+                fontSize={{ base: "38px", md: "46px" }}
+                lineHeight='100%'>
+                18k+
+              </Text>
+              <VSeparator mx='30px' h='30px' color={textColorSecondary} />
+              <Text color={textColorSecondary} fontWeight='400' fontSize='sm'>
+                More than 18k+ people that trust
+                <br /> products crafted by Simmmple
+              </Text>
             </Flex>
           </Box>
           <Grid
@@ -123,6 +164,20 @@ export default function Default() {
           </Grid>
         </Flex>
       </InnerContent>
+      <Image
+        src={heroImage}
+        w={{ lg: "770px", xl: "930px" }}
+        bottom='-20px'
+        mt={{ base: "20px", lg: "unset" }}
+        right={{
+          base: "0px",
+          lg: "-250px",
+          xl: "-210px",
+          "2xl": "-174px",
+          "3xl": "-174px",
+        }}
+        position={{ base: "relative", lg: "absolute" }}
+      />
     </Flex>
   );
 }

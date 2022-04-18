@@ -72,7 +72,7 @@ export default function Overview() {
             direction='column'
             mx='auto'
             mb='40px'
-            maxW={{ base: "100%", md: "100%", lg: "80%", xl: "54%" }}
+            maxW={{ base: "100%", md: "100%", lg: "80%", xl: "64%" }}
             textAlign='center'>
             <Text
               fontWeight='700'
@@ -89,71 +89,69 @@ export default function Overview() {
               fontWeight='700'
               fontSize={{ base: "28px", md: "48px" }}
               mb='30px'>
-              Boost your productivity with fully coded pages
+              Chakra UI admin template pages
             </Text>
             <Text color={textColorSecondary} fontSize='lg' w='100%'>
               Improve your development process with a set of fully coded pages!
-              Trendy page categories like NFTs pages and many more are available
-              to save your time!
+              Trendy page categories like NFTs page and many more are available
+              to save your time!{" "}
+              <Text color={textColor} as='span' fontWeight='700'>
+                Click on a image to see live preview!
+              </Text>
             </Text>
           </Flex>
         </Flex>
-        <SimpleGrid
-          columns={{ base: "1", md: "2", lg: "4" }}
-          gap='20px'
+        <Flex
+          mb='90px'
+          justify='center'
           w={{ base: "72%", md: "100%" }}
+          flexWrap='wrap'
           mb='20px'>
-          <PageCard title='Main Dashboard' image={image} link='link' />
-          <PageCard title='Smart Home' image={image1} link='link' />
-          <PageCard title='Car Interface' image={image2} link='link' />
-          <PageCard title='Profile Overview' image={image3} link='link' />
-          <PageCard title='NFT Marketplace' image={image4} link='link' />
-          <PageCard title='NFT Page' image={image5} link='link' />
+          <PageCard
+            mb='20px'
+            me='20px'
+            title='Main Dashboard'
+            image={image}
+            link='link'
+          />
+          <PageCard
+            mb='20px'
+            me='20px'
+            title='Smart Home'
+            image={image1}
+            link='link'
+          />
+          <PageCard
+            mb='20px'
+            me='20px'
+            title='Car Interface'
+            image={image2}
+            link='link'
+          />
+          <PageCard
+            mb='20px'
+            title='Profile Overview'
+            image={image3}
+            link='link'
+          />
+          <PageCard
+            me='20px'
+            title='NFT Marketplace'
+            image={image4}
+            link='link'
+          />
+          <PageCard me='20px' title='NFT Page' image={image5} link='link' />
           <PageCard title='NFT Collection' image={image6} link='link' />
-          <PageCard title='NFT Profile' image={image7} link='link' />
-        </SimpleGrid>
-        <Box position='relative' pb='120px'>
-          <Flex
-            position='absolute'
-            h='100px'
-            w='100%'
-            zIndex='3'
-            justifyContent='center'
-            bottom='200px'>
-            <Link
-              mx='auto'
-              href='https://horizon-ui.com/chakra-pro/?ref=horizon-website'>
-              <Button
-                w='141px'
-                h='54px'
-                fontSize='sm'
-                mt='auto'
-                borderRadius='12px'
-                variant='darkBrand'>
-                See all Pages
-              </Button>
-            </Link>
-          </Flex>
-          <Flex
-            position='absolute'
-            transform={{
-              base: "translate(-222px, -120px)",
-              md: "translate(-1500px, -110px)",
-            }}
-            h='100%'
-            w='300vw'
-            zIndex='1'
-            bg={gradient}></Flex>
-          <SimpleGrid
-            columns={{ base: "1", md: "2", lg: "4" }}
-            gap='20px'
-            w='100%'>
-            <PageCard title='Kanban Page' image={image8} link='link' />
-            <PageCard title='Billing Page' image={image9} link='link' />
-            <PageCard title='Application' image={image10} link='link' />
-            <PageCard title='Course Page' image={image11} link='link' />
-          </SimpleGrid>
-        </Box>
+        </Flex>
+        <Link>
+          <Button
+            h='35px'
+            borderRadius='12px'
+            variant='darkBrand'
+            fontSoze='sm'>
+            Unlock more pages with Horizon PRO
+          </Button>
+        </Link>
       </InnerContent>
     </Flex>
   );

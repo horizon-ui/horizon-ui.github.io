@@ -6,9 +6,8 @@ import Navbar from "components/navbar/NavbarAdmin.js";
 import { SidebarContext } from "contexts/SidebarContext";
 import "mapbox-gl/dist/mapbox-gl.css";
 import React, { useState } from "react";
-import { Redirect, Route, Switch } from "react-router-dom";
 import routes from "routes.js";
-
+import Free from "views/free";
 // Custom Chakra theme
 export default function Dashboard(props) {
   const { ...rest } = props;
@@ -16,9 +15,6 @@ export default function Dashboard(props) {
   const [fixed] = useState(false);
   const [toggleSidebar, setToggleSidebar] = useState(false);
   // functions for changing the states from components
-  const getRoute = () => {
-    return window.location.pathname !== "/admin/full-screen-maps";
-  };
   const getActiveRoute = (routes) => {
     let activeRoute = "Default Brand Text";
     for (let i = 0; i < routes.length; i++) {
@@ -88,27 +84,6 @@ export default function Dashboard(props) {
     }
     return activeNavbar;
   };
-  const getRoutes = (routes) => {
-    return routes.map((prop, key) => {
-      if (prop.layout === "/admin") {
-        return (
-          <Route
-            path={prop.layout + prop.path}
-            component={prop.component}
-            key={key}
-          />
-        );
-      }
-      if (prop.collapse) {
-        return getRoutes(prop.items);
-      }
-      if (prop.category) {
-        return getRoutes(prop.items);
-      } else {
-        return null;
-      }
-    });
-  };
   const { onOpen } = useDisclosure();
   return (
     <Box>
@@ -117,7 +92,6 @@ export default function Dashboard(props) {
           toggleSidebar,
           setToggleSidebar,
         }}>
-        {/* <Sidebar routes={routes} display='none' {...rest} /> */}
         <Box
           float='right'
           minHeight='100vh'
@@ -144,14 +118,7 @@ export default function Dashboard(props) {
             </Box>
           </Portal>
 
-          {getRoute() ? (
-            <Box mx='auto' minH='100vh'>
-              <Switch>
-                {getRoutes(routes)}
-                <Redirect from='/' to='/admin/pro' />
-              </Switch>
-            </Box>
-          ) : null}
+          <Free />
           <Box>
             <Footer />
           </Box>

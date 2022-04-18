@@ -15,8 +15,8 @@ ReactDOM.render(
       <React.StrictMode>
         <HashRouter>
           <Switch>
-            <Route path={`/admin`} component={AdminLayout} />
-            <Redirect from='/' to='/admin' />
+            <Route path={`/`} component={AdminLayout} />
+            <Redirect from='/' to='/' />
           </Switch>
         </HashRouter>
       </React.StrictMode>

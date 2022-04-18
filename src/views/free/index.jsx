@@ -24,13 +24,19 @@ import React from "react";
 // Chakra imports
 import { Flex } from "@chakra-ui/react";
 // Custom components
-import Hero from "sections/pro/hero";
+import Hero from "sections/free/hero";
+import Upgrade from "sections/free/upgrade";
+import GetStarted from "sections/free/started";
+import OpenSource from "sections/free/openSource";
+import Overview from "sections/free/overview";
 export default function Default() {
   return (
-    <Flex
-      direction={{ base: "column", xl: "row" }}
-      pt={{ base: "130px", md: "80px", xl: "80px" }}>
+    <Flex direction={{ base: "column" }}>
       <Hero />
+      <Overview />
+      <GetStarted />
+      <OpenSource />
+      <Upgrade />
     </Flex>
   );
 }

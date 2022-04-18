@@ -34,8 +34,8 @@ import {
 } from "@chakra-ui/react";
 
 // Assets
-import imageDark from "assets/img/pro/started/section4-dark.png";
-import imageLight from "assets/img/pro/started/section4-light.png";
+import imageDark from "assets/img/pro/openSource/section4-dark.png";
+import imageLight from "assets/img/pro/openSource/section4-light.png";
 import { MdChevronRight } from "react-icons/md";
 
 // Custom components
@@ -59,11 +59,11 @@ export default function GetStarted() {
       <InnerContent px={{ base: "20px", md: "40px", xl: "0px" }}>
         <Flex direction={{ base: "column-reverse", lg: "row" }} width='100%'>
           <Image
+            me='110px'
             src={image}
             w={{ base: "100%", md: "100%", lg: "400px", xl: "565px" }}
-            me='110px'
             mt={{ base: "40px", md: "40px", lg: "0px" }}
-          />
+          />{" "}
           <Flex direction='column' width='stretch'>
             <Box my='auto'>
               <Text
@@ -74,7 +74,7 @@ export default function GetStarted() {
                 fontSize='sm'
                 w='100%'
                 mb='10px'>
-                GET STARTED WITH HORIZON
+                OPEN SOURCE ADMIN TEMPLATE
               </Text>
               <Text
                 fontWeight='700'
@@ -83,66 +83,16 @@ export default function GetStarted() {
                 lineHeight={{ base: "34px", md: "60px" }}
                 mb='20px'
                 maxW={{ base: "80%", md: "unset" }}>
-                Turn your datas into a beautiful dashboard
+                Dark & Light mode Admin Template
               </Text>
               <Text
                 color={textColorSecondary}
                 fontSize='lg'
                 w={{ base: "90%", md: "100%" }}
                 mb='30px'>
-                The beauty of Horizon is that you can give life to all of your
-                data into a dashboard with a very modern and beautiful UI!
+                Choose your favorite theme mode! Horizon UI is available in two
+                main features, Dark & Light theme modes!
               </Text>
-              <Flex align='center' mb='30px'>
-                <Flex me={{ base: "20px", md: "50px" }} direction='column'>
-                  <Text
-                    color={textColor}
-                    fontWeight='700'
-                    fontSize={{ base: "30px", md: "38px" }}
-                    lineHeight='100%'>
-                    400+
-                  </Text>
-                  <Text
-                    color={textColorSecondary}
-                    fontWeight='700'
-                    fontSize={{ base: "xs", md: "sm" }}
-                    letterSpacing='2px'>
-                    COMPONENTS
-                  </Text>
-                </Flex>
-                <Flex me='50px' direction='column'>
-                  <Text
-                    color={textColor}
-                    fontWeight='700'
-                    fontSize={{ base: "30px", md: "38px" }}
-                    lineHeight='100%'>
-                    40+
-                  </Text>
-                  <Text
-                    color={textColorSecondary}
-                    fontWeight='700'
-                    fontSize={{ base: "xs", md: "sm" }}
-                    letterSpacing='2px'>
-                    EXAMPLES
-                  </Text>
-                </Flex>
-                <Flex direction='column'>
-                  <Text
-                    color={textColor}
-                    fontWeight='700'
-                    fontSize={{ base: "30px", md: "38px" }}
-                    lineHeight='100%'>
-                    10+
-                  </Text>
-                  <Text
-                    color={textColorSecondary}
-                    fontWeight='700'
-                    fontSize={{ base: "xs", md: "sm" }}
-                    letterSpacing='2px'>
-                    CATEGORIES
-                  </Text>
-                </Flex>
-              </Flex>
               <Flex align='center'>
                 <Button
                   py='20px'
@@ -153,7 +103,7 @@ export default function GetStarted() {
                   me='20px'
                   w='160px'
                   h='54px'>
-                  Get Horizon PRO
+                  Get started
                   <Icon as={MdChevronRight} color='white' h='16px' w='16px' />
                 </Button>
                 <Button
@@ -167,7 +117,7 @@ export default function GetStarted() {
                   h='54px'
                   bg='transparent'
                   my='auto'>
-                  Live preview
+                  See Figma version
                 </Button>
               </Flex>
             </Box>

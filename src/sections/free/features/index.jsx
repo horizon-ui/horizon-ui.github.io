@@ -35,9 +35,9 @@ import box1 from "assets/img/pro/features/section3-box1.png";
 import box2 from "assets/img/pro/features/section3-box2.png";
 import InnerContent from "layouts/innerContent";
 import React from "react";
-import BigCard from "sections/pro/features/components/BigCard";
+import BigCard from "sections/free/features/components/BigCard";
 // Custom components
-import SmallCard from "sections/pro/features/components/SmallCard";
+import SmallCard from "sections/free/features/components/SmallCard";
 
 export default function Features() {
   // Chakra Color Mode

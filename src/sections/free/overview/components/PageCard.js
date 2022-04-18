@@ -42,7 +42,7 @@ export default function PageCard(props) {
   const textColor = useColorModeValue("secondaryGray.900", "white");
   const dot = useColorModeValue("#CBD5E0", "#4A5568");
   return (
-    <Link href={link}>
+    <Link href={link} {...rest}>
       <Card
         p='0px'
         w='100%'
@@ -51,8 +51,7 @@ export default function PageCard(props) {
         direction={{ base: "column" }}
         overflow='hidden'
         bgSize='cover'
-        position='relative'
-        {...rest}>
+        position='relative'>
         <Flex align='center' p='18px'>
           <Icon me='6px' h='10px' w='10px' as={BsCircleFill} color={dot} />
           <Icon me='6px' h='10px' w='10px' as={BsCircleFill} color={dot} />

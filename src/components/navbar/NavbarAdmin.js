@@ -132,6 +132,16 @@ export default function AdminNavbar(props) {
             my='auto'>
             Pricing
           </Link>
+          <Link
+            display={{ base: "none", lg: "block" }}
+            href='#pricing'
+            color={textColor}
+            fontSize='sm'
+            fontWeight='500'
+            me='30px'
+            my='auto'>
+            PRO Version
+          </Link>
           <VSeparator
             me='14px'
             bg={textColor}
@@ -223,6 +233,21 @@ export default function AdminNavbar(props) {
                   _focus={{ bg: "none" }}
                   color='red.400'
                   borderRadius='8px'>
+                  <Link
+                    href='#pricing'
+                    color={textColor}
+                    fontSize='sm'
+                    fontWeight='500'
+                    me='30px'
+                    my='auto'>
+                    PRO Version
+                  </Link>
+                </MenuItem>
+                <MenuItem
+                  _hover={{ bg: "none" }}
+                  _focus={{ bg: "none" }}
+                  color='red.400'
+                  borderRadius='8px'>
                   <Link href='PREVIEW'>
                     <Button
                       variant='no-hover'
@@ -232,7 +257,7 @@ export default function AdminNavbar(props) {
                       borderRadius='12px'
                       bg='transparent'
                       onClick={toggleColorMode}>
-                      Live preview
+                      Pricing & FAQs
                     </Button>
                   </Link>
                 </MenuItem>
@@ -252,7 +277,7 @@ export default function AdminNavbar(props) {
               bg='transparent'
               my='auto'
               onClick={toggleColorMode}>
-              Live preview
+              Pricing & FAQs
             </Button>
           </Link>
         </Flex>

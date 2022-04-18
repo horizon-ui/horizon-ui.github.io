@@ -26,7 +26,7 @@ import { HSeparator } from "components/separator/Separator";
 // Custom components
 import InnerContent from "layouts/innerContent";
 import React from "react";
-import Testimonial from "sections/pro/testimonials/components/Testimonial";
+import Testimonial from "sections/free/testimonials/components/Testimonial";
 
 export default function Testimonials() {
   // Chakra Color Mode
