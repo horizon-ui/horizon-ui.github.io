@@ -62,7 +62,7 @@ export default function Fast() {
             direction='column'
             mx='auto'
             mb='40px'
-            maxW={{ base: "100%", lg: "70%", "2xl": "54%" }}
+            maxW={{ base: "100%", lg: "70%", "2xl": "85%" }}
             textAlign='center'>
             <Text
               fontWeight='700'
@@ -72,14 +72,15 @@ export default function Fast() {
               fontSize='sm'
               w='100%'
               mb='10px'>
-              ADAPTIVE ADMIN DASHBOARD
+              UPGRADE TO HORIZON UI PRO
             </Text>
             <Text
               color={textColor}
               fontWeight='700'
               fontSize={{ base: "28px", md: "48px" }}
               mb={{ base: "14px", lg: "30px" }}>
-              Fast. Responsive. Trendy.
+              Improve your development process and start doing more with Horizon
+              UI PRO
             </Text>
             <Text mb='30px' color={textColorSecondary} fontSize='lg' w='100%'>
               Save hundreds of hours trying to create and develop a dashboard
