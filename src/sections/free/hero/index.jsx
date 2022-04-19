@@ -26,6 +26,7 @@ import {
   Button,
   Flex,
   Grid,
+  Link,
   Icon,
   Image,
   Text,
@@ -50,7 +51,7 @@ import React from "react";
 
 export default function Hero() {
   const background = useColorModeValue(heroBgLight, heroBgDark);
-  const heroImage = useColorModeValue(heroImageLight, heroImageDark);
+  const heroImage = useColorModeValue(heroImageLight, heroImageLight);
   // Chakra Color Mode
   const textColor = useColorModeValue("secondaryGray.900", "white");
   const textColorSecondary = useColorModeValue("secondaryGray.700", "white");
@@ -93,18 +94,21 @@ export default function Hero() {
               Open Source Admin Template for Chakra UI & React!
             </Text>
             <Flex align='center' mb='30px'>
-              <Button
-                py='20px'
-                px='16px'
-                fontSize='sm'
-                variant='brand'
-                borderRadius='12px'
-                me={{ base: "20px", md: "30px" }}
-                w='160px'
-                h='54px'>
-                Get Horizon PRO
-                <Icon as={MdChevronRight} color='white' h='16px' w='16px' />
-              </Button>
+              <Link href='https://github.com/horizon-ui/horizon-ui-chakra'>
+                <Button
+                  py='20px'
+                  px='16px'
+                  fontSize='sm'
+                  variant='brand'
+                  borderRadius='12px'
+                  me={{ base: "20px", md: "30px" }}
+                  w='160px'
+                  h='54px'>
+                  Get started
+                  <Icon as={MdChevronRight} color='white' h='16px' w='16px' />
+                </Button>
+              </Link>
+
               <Icon
                 as={ChakraLogo}
                 color={textColor}

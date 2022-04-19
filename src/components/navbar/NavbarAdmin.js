@@ -110,7 +110,7 @@ export default function AdminNavbar(props) {
         }}
         alignItems='center'
         mb={gap}>
-        <Icon as={HorizonUIFree} color={textColor} w='193px' h='25px' />
+        <Icon as={HorizonUIFree} color={textColor} w='153px' h='25px' />
         <Flex ms='auto'>
           <Link
             display={{ base: "none", lg: "block" }}
@@ -185,6 +185,7 @@ export default function AdminNavbar(props) {
               me={{ base: "30px", lg: "0px" }}
               alignContent='end'>
               <Icon
+                mt='2px'
                 display={{ base: "block", lg: "none" }}
                 as={IoMenuOutline}
                 color={textColor}

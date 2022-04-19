@@ -43,7 +43,7 @@ import { MdChevronRight } from "react-icons/md";
 import InnerContent from "layouts/innerContent";
 
 export default function GetStarted() {
-  const image = useColorModeValue(imageLight, imageDark);
+  const image = useColorModeValue(imageLight, imageLight);
   // Chakra Color Mode
   const textColor = useColorModeValue("secondaryGray.900", "white");
   const textColorSecondary = useColorModeValue("secondaryGray.700", "white");
