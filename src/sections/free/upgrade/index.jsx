@@ -52,13 +52,18 @@ export default function Fast() {
   return (
     <Flex
       w='100%'
+      maxW='100%'
       direction={{ base: "column" }}
       pt={{ base: "80px", md: "120px", xl: "140px" }}
       overflow='hidden'
       bgSize='cover'
       position='relative'>
-      <InnerContent px={{ base: "20px", md: "40px", xl: "0px" }}>
-        <Flex direction='column' width='stretch'>
+      <InnerContent>
+        <Flex
+          maxW='100%'
+          direction='column'
+          width='stretch'
+          px={{ base: "20px", md: "40px", xl: "0px" }}>
           <Flex
             direction='column'
             mx='auto'
@@ -160,7 +165,6 @@ export default function Fast() {
                   borderColor={borderColor}
                   color={textColor}
                   borderRadius='12px'
-                  me='30px'
                   fontSize='sm'
                   w='160px'
                   h='54px'

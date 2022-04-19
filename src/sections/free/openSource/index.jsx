@@ -43,7 +43,7 @@ import { MdChevronRight } from "react-icons/md";
 import InnerContent from "layouts/innerContent";
 
 export default function GetStarted() {
-  const image = useColorModeValue(imageLight, imageLight);
+  const image = useColorModeValue(imageLight, imageDark);
   // Chakra Color Mode
   const textColor = useColorModeValue("secondaryGray.900", "white");
   const textColorSecondary = useColorModeValue("secondaryGray.700", "white");
@@ -62,9 +62,9 @@ export default function GetStarted() {
           <Image
             me='110px'
             src={image}
-            w={{ base: "100%", md: "100%", lg: "400px", xl: "565px" }}
+            w={{ base: "90%", md: "100%", lg: "400px", xl: "565px" }}
             mt={{ base: "40px", md: "40px", lg: "0px" }}
-          />{" "}
+          />
           <Flex direction='column' width='stretch'>
             <Box my='auto'>
               <Text

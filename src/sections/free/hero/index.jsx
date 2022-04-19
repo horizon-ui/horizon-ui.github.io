@@ -51,7 +51,7 @@ import React from "react";
 
 export default function Hero() {
   const background = useColorModeValue(heroBgLight, heroBgDark);
-  const heroImage = useColorModeValue(heroImageLight, heroImageLight);
+  const heroImage = useColorModeValue(heroImageLight, heroImageDark);
   // Chakra Color Mode
   const textColor = useColorModeValue("secondaryGray.900", "white");
   const textColorSecondary = useColorModeValue("secondaryGray.700", "white");
@@ -72,8 +72,11 @@ export default function Hero() {
       bgPosition={{ base: "top", lg: "unset" }}
       bgSize='cover'
       position='relative'>
-      <InnerContent w='1170px' px={{ base: "20px", md: "40px", xl: "0px" }}>
-        <Flex direction='column' width='stretch'>
+      <InnerContent
+        w='1170px'
+        maxW='100%'
+        px={{ base: "20px", md: "40px", xl: "0px" }}>
+        <Flex maxW='100%' direction='column' width='stretch'>
           <Box maxW={{ base: "100%", lg: "60s%" }}>
             <Text
               color={textColor}
@@ -174,7 +177,7 @@ export default function Hero() {
         bottom='-20px'
         mt={{ base: "20px", lg: "unset" }}
         right={{
-          base: "0px",
+          base: "-40px",
           lg: "-250px",
           xl: "-210px",
           "2xl": "-174px",

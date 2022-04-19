@@ -130,16 +130,6 @@ export default function AdminNavbar(props) {
             fontWeight='500'
             me='30px'
             my='auto'>
-            Pricing
-          </Link>
-          <Link
-            display={{ base: "none", lg: "block" }}
-            href='https://horizon-ui.com/pro/'
-            color={textColor}
-            fontSize='sm'
-            fontWeight='500'
-            me='30px'
-            my='auto'>
             PRO Version
           </Link>
           <VSeparator
@@ -209,7 +199,7 @@ export default function AdminNavbar(props) {
                   borderRadius='8px'
                   px='14px'>
                   <Link
-                    href='DOCS'
+                    href='https://horizon-ui.com/documentation/docs/introduction'
                     color={textColor}
                     fontSize='sm'
                     fontWeight='500'
@@ -221,25 +211,10 @@ export default function AdminNavbar(props) {
                 <MenuItem
                   _hover={{ bg: "none" }}
                   _focus={{ bg: "none" }}
-                  borderRadius='8px'
-                  px='14px'>
-                  <Link
-                    href='Pricing'
-                    color={textColor}
-                    fontSize='sm'
-                    fontWeight='500'
-                    me='30px'
-                    my='auto'>
-                    Pricing
-                  </Link>
-                </MenuItem>
-                <MenuItem
-                  _hover={{ bg: "none" }}
-                  _focus={{ bg: "none" }}
                   color='red.400'
                   borderRadius='8px'>
                   <Link
-                    href='#pricing'
+                    href='https://horizon-ui.com/pro/'
                     color={textColor}
                     fontSize='sm'
                     fontWeight='500'
@@ -253,16 +228,15 @@ export default function AdminNavbar(props) {
                   _focus={{ bg: "none" }}
                   color='red.400'
                   borderRadius='8px'>
-                  <Link href='PREVIEW'>
+                  <Link href='https://horizon-ui.com/horizon-ui-chakra/'>
                     <Button
                       variant='no-hover'
                       border='1px solid'
                       borderColor={textColor}
                       color={textColor}
                       borderRadius='12px'
-                      bg='transparent'
-                      onClick={toggleColorMode}>
-                      Pricing & FAQs
+                      bg='transparent'>
+                      Live Preview
                     </Button>
                   </Link>
                 </MenuItem>
@@ -271,7 +245,7 @@ export default function AdminNavbar(props) {
           </Menu>
 
           <Link
-            href='https://horizon-ui.com/pro/'
+            href='https://horizon-ui.com/horizon-ui-chakra/'
             display={{ base: "none", lg: "block" }}>
             <Button
               variant='no-hover'
@@ -281,9 +255,8 @@ export default function AdminNavbar(props) {
               fontSize='sm'
               borderRadius='12px'
               bg='transparent'
-              my='auto'
-              onClick={toggleColorMode}>
-              Pricing & FAQs
+              my='auto'>
+              Live Preview
             </Button>
           </Link>
         </Flex>

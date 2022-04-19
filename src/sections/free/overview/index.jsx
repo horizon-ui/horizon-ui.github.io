@@ -103,44 +103,51 @@ export default function Overview() {
           flexWrap='wrap'>
           <PageCard
             mb='20px'
-            me='20px'
+            me={{ base: "0px", md: "20px" }}
             title='Main Dashboard'
             image={image}
             link='https://horizon-ui.com/horizon-ui-chakra/#/admin/default'
           />
           <PageCard
             mb='20px'
-            me='20px'
+            me={{ base: "0px", lg: "20px" }}
             title='NFT Marketplace'
             image={image1}
             link='https://horizon-ui.com/horizon-ui-chakra/#/admin/nft-marketplace'
           />
           <PageCard
             mb='20px'
-            me='20px'
+            me={{ base: "0px", md: "20px" }}
             title='Tables Page'
             image={image2}
             link='https://horizon-ui.com/horizon-ui-chakra/#/admin/data-tables'
           />
           <PageCard
+            me={{ base: "0px", lg: "20px", xl: "20px" }}
             mb='20px'
             title='Kanban Page'
             image={image3}
-            link='https://horizon-ui.com/horizon-ui-chakra/#/rtl/rtl-default'
+            link='https://horizon-ui.com/horizon-ui-chakra/#/admin/kanban'
           />
           <PageCard
-            me='20px'
+            mb={{ base: "20px", md: "20px", lg: "0px" }}
+            me={{ base: "0px", md: "20px" }}
             title='Profile Overview'
             image={image4}
             link='https://horizon-ui.com/horizon-ui-chakra/#/admin/profile'
           />
           <PageCard
-            me='20px'
+            mb={{ base: "20px", md: "0px" }}
+            me={{ base: "0px", lg: "20px" }}
             title='Sign In Page'
             image={image5}
             link='https://horizon-ui.com/horizon-ui-chakra/#/auth/sign-in'
           />
-          <PageCard title='RTL Page' image={image6} link='link' />
+          <PageCard
+            title='RTL Page'
+            image={image6}
+            link='https://horizon-ui.com/horizon-ui-chakra/#/rtl/rtl-default'
+          />
         </Flex>
         <Link href='https://horizon-ui.com/pro/'>
           <Button
