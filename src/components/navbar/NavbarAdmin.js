@@ -14,7 +14,7 @@ import {
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { HorizonLogoPro } from "components/icons/Icons";
+import { HorizonUIFree } from "components/icons/Icons";
 import { VSeparator } from "components/separator/Separator";
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
@@ -110,7 +110,7 @@ export default function AdminNavbar(props) {
         }}
         alignItems='center'
         mb={gap}>
-        <Icon as={HorizonLogoPro} color={textColor} w='193px' h='25px' />
+        <Icon as={HorizonUIFree} color={textColor} w='193px' h='25px' />
         <Flex ms='auto'>
           <Link
             display={{ base: "none", lg: "block" }}
@@ -124,7 +124,7 @@ export default function AdminNavbar(props) {
           </Link>
           <Link
             display={{ base: "none", lg: "block" }}
-            href='#pricing'
+            href='https://horizon-ui.com/pro/'
             color={textColor}
             fontSize='sm'
             fontWeight='500'
@@ -134,7 +134,7 @@ export default function AdminNavbar(props) {
           </Link>
           <Link
             display={{ base: "none", lg: "block" }}
-            href='#pricing'
+            href='https://horizon-ui.com/pro/'
             color={textColor}
             fontSize='sm'
             fontWeight='500'
@@ -147,14 +147,19 @@ export default function AdminNavbar(props) {
             bg={textColor}
             display={{ base: "none", lg: "block" }}
           />
-          <Button
-            variant='no-hover'
-            h='max-content'
-            w='max-content'
-            bg='transparent'
-            my='auto'>
-            <Icon as={IoLogoGithub} color={textColor} w='18px' h='18px' />
-          </Button>
+          <Link
+            my='auto'
+            href='https://github.com/horizon-ui/horizon-ui-chakra'>
+            <Button
+              variant='no-hover'
+              h='max-content'
+              w='max-content'
+              bg='transparent'
+              my='auto'>
+              <Icon as={IoLogoGithub} color={textColor} w='18px' h='18px' />
+            </Button>
+          </Link>
+
           <Button
             variant='no-hover'
             h='max-content'
@@ -178,7 +183,6 @@ export default function AdminNavbar(props) {
               maxH='20px'
               maxW='20px'
               me={{ base: "30px", lg: "0px" }}
-              display='flex'
               alignContent='end'>
               <Icon
                 display={{ base: "block", lg: "none" }}
@@ -266,13 +270,14 @@ export default function AdminNavbar(props) {
           </Menu>
 
           <Link
-            href='https://horizon-ui.com/chakra-pro/'
+            href='https://horizon-ui.com/pro/'
             display={{ base: "none", lg: "block" }}>
             <Button
               variant='no-hover'
               border='1px solid'
               borderColor={textColor}
               color={textColor}
+              fontSize='sm'
               borderRadius='12px'
               bg='transparent'
               my='auto'

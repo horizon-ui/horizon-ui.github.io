@@ -28,6 +28,7 @@ import {
   Flex,
   SimpleGrid,
   Text,
+  Link,
   useColorModeValue,
 } from "@chakra-ui/react";
 // Assets
@@ -39,16 +40,10 @@ import image3 from "assets/img/pro/overview/image-3.png";
 import image4 from "assets/img/pro/overview/image-4.png";
 import image5 from "assets/img/pro/overview/image-5.png";
 import image6 from "assets/img/pro/overview/image-6.png";
-import image7 from "assets/img/pro/overview/image-7.png";
-import image8 from "assets/img/pro/overview/image-8.png";
-import image9 from "assets/img/pro/overview/image-9.png";
-import image10 from "assets/img/pro/overview/image-10.png";
-import image11 from "assets/img/pro/overview/image-11.png";
 
 // Custom components
 import InnerContent from "layouts/innerContent";
 import PageCard from "./components/PageCard";
-import { Link } from "react-router-dom";
 
 export default function Overview() {
   // Chakra Color Mode
@@ -72,7 +67,7 @@ export default function Overview() {
             direction='column'
             mx='auto'
             mb='40px'
-            maxW={{ base: "100%", md: "100%", lg: "80%", xl: "64%" }}
+            maxW={{ base: "100%", md: "100%", lg: "80%", xl: "70%" }}
             textAlign='center'>
             <Text
               fontWeight='700'
@@ -105,50 +100,54 @@ export default function Overview() {
           mb='90px'
           justify='center'
           w={{ base: "72%", md: "100%" }}
-          flexWrap='wrap'
-          mb='20px'>
+          flexWrap='wrap'>
           <PageCard
             mb='20px'
             me='20px'
             title='Main Dashboard'
             image={image}
-            link='link'
+            link='https://horizon-ui.com/horizon-ui-chakra/#/admin/default'
           />
           <PageCard
             mb='20px'
-            me='20px'
-            title='Smart Home'
-            image={image1}
-            link='link'
-          />
-          <PageCard
-            mb='20px'
-            me='20px'
-            title='Car Interface'
-            image={image2}
-            link='link'
-          />
-          <PageCard
-            mb='20px'
-            title='Profile Overview'
-            image={image3}
-            link='link'
-          />
-          <PageCard
             me='20px'
             title='NFT Marketplace'
-            image={image4}
-            link='link'
+            image={image1}
+            link='https://horizon-ui.com/horizon-ui-chakra/#/admin/nft-marketplace'
           />
-          <PageCard me='20px' title='NFT Page' image={image5} link='link' />
-          <PageCard title='NFT Collection' image={image6} link='link' />
+          <PageCard
+            mb='20px'
+            me='20px'
+            title='Tables Page'
+            image={image2}
+            link='https://horizon-ui.com/horizon-ui-chakra/#/admin/data-tables'
+          />
+          <PageCard
+            mb='20px'
+            title='Kanban Page'
+            image={image3}
+            link='https://horizon-ui.com/horizon-ui-chakra/#/rtl/rtl-default'
+          />
+          <PageCard
+            me='20px'
+            title='Profile Overview'
+            image={image4}
+            link='https://horizon-ui.com/horizon-ui-chakra/#/admin/profile'
+          />
+          <PageCard
+            me='20px'
+            title='Sign In Page'
+            image={image5}
+            link='https://horizon-ui.com/horizon-ui-chakra/#/auth/sign-in'
+          />
+          <PageCard title='RTL Page' image={image6} link='link' />
         </Flex>
-        <Link>
+        <Link href='https://horizon-ui.com/pro/'>
           <Button
-            h='35px'
+            h='50px'
             borderRadius='12px'
             variant='darkBrand'
-            fontSoze='sm'>
+            fontSize='sm'>
             Unlock more pages with Horizon PRO
           </Button>
         </Link>

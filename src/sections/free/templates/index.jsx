@@ -28,6 +28,7 @@ import {
   Box,
   Button,
   Icon,
+  Link,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";

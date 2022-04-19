@@ -30,6 +30,7 @@ import {
   Grid,
   Image,
   Text,
+  Link,
   useColorModeValue,
 } from "@chakra-ui/react";
 
@@ -122,31 +123,35 @@ export default function GetStarted() {
                 </Flex>
               </Flex>
               <Flex align='center'>
-                <Button
-                  py='20px'
-                  px='16px'
-                  fontSize='sm'
-                  variant='brand'
-                  borderRadius='12px'
-                  me='20px'
-                  w='160px'
-                  h='54px'>
-                  Get Horizon PRO
-                  <Icon as={MdChevronRight} color='white' h='16px' w='16px' />
-                </Button>
-                <Button
-                  variant='no-hover'
-                  border='1px solid'
-                  borderColor={borderColor}
-                  color={textColor}
-                  borderRadius='12px'
-                  me='30px'
-                  w='160px'
-                  h='54px'
-                  bg='transparent'
-                  my='auto'>
-                  Live preview
-                </Button>
+                <Link href='https://github.com/horizon-ui/horizon-ui-chakra'>
+                  <Button
+                    py='20px'
+                    px='16px'
+                    fontSize='sm'
+                    variant='brand'
+                    borderRadius='12px'
+                    me='20px'
+                    w='160px'
+                    h='54px'>
+                    Try Horizon now
+                    <Icon as={MdChevronRight} color='white' h='16px' w='16px' />
+                  </Button>
+                </Link>
+                <Link href='https://horizon-ui.com/horizon-ui-chakra/'>
+                  <Button
+                    variant='no-hover'
+                    border='1px solid'
+                    borderColor={borderColor}
+                    color={textColor}
+                    borderRadius='12px'
+                    me='30px'
+                    w='160px'
+                    h='54px'
+                    bg='transparent'
+                    my='auto'>
+                    Live preview
+                  </Button>
+                </Link>
               </Flex>
             </Box>
             <Grid

@@ -28,6 +28,7 @@ import {
   Icon,
   Flex,
   Image,
+  Link,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
@@ -138,31 +139,36 @@ export default function Fast() {
               </Flex>
             </Flex>
             <Flex mx='auto' align='center' justifyItems='center'>
-              <Button
-                py='20px'
-                px='16px'
-                fontSize='sm'
-                variant='brand'
-                borderRadius='12px'
-                me='20px'
-                w='160px'
-                h='54px'>
-                Upgrade to PRO
-                <Icon as={MdChevronRight} color='white' h='16px' w='16px' />
-              </Button>
-              <Button
-                variant='no-hover'
-                border='1px solid'
-                borderColor={borderColor}
-                color={textColor}
-                borderRadius='12px'
-                me='30px'
-                w='160px'
-                h='54px'
-                bg='transparent'
-                my='auto'>
-                See live preview
-              </Button>
+              <Link href='https://horizon-ui.com/pro'>
+                <Button
+                  py='20px'
+                  px='16px'
+                  fontSize='sm'
+                  variant='brand'
+                  borderRadius='12px'
+                  me='20px'
+                  w='160px'
+                  h='54px'>
+                  Upgrade to PRO
+                  <Icon as={MdChevronRight} color='white' h='16px' w='16px' />
+                </Button>
+              </Link>
+              <Link href='https://horizon-ui.com/chakra-pro/'>
+                <Button
+                  variant='no-hover'
+                  border='1px solid'
+                  borderColor={borderColor}
+                  color={textColor}
+                  borderRadius='12px'
+                  me='30px'
+                  fontSize='sm'
+                  w='160px'
+                  h='54px'
+                  bg='transparent'
+                  my='auto'>
+                  See live preview
+                </Button>
+              </Link>
             </Flex>
           </Flex>
         </Flex>
