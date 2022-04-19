@@ -71,7 +71,7 @@ export default function Hero() {
       bgPosition={{ base: "top", lg: "unset" }}
       bgSize='cover'
       position='relative'>
-      <InnerContent px={{ base: "20px", md: "40px", xl: "0px" }}>
+      <InnerContent w='1170px' px={{ base: "20px", md: "40px", xl: "0px" }}>
         <Flex direction='column' width='stretch'>
           <Box maxW={{ base: "100%", lg: "60s%" }}>
             <Text
@@ -87,7 +87,7 @@ export default function Hero() {
             <Text
               color={textColorSecondary}
               fontSize='lg'
-              w={{ base: "100%", md: "70%" }}
+              w={{ base: "100%", lg: "55%", xl: "45%" }}
               mb='30px'>
               Start building your dashboard with Horizon UI, the most trendiest
               Open Source Admin Template for Chakra UI & React!
