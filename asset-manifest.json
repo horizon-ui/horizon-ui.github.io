@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4584f23b.css",
+    "main.js": "/static/js/main.8eaae188.js",
+    "static/media/heroBgDark.png": "/static/media/heroBgDark.836e6f0ad260103f744f.png",
+    "static/media/heroBgLight.png": "/static/media/heroBgLight.9da17e1adec4e4f74833.png",
+    "static/media/section2-dashboard-light.png": "/static/media/section2-dashboard-light.90a1a2df2e174863be7a.png",
+    "static/media/hero-image-dark.png": "/static/media/hero-image-dark.4df11b0fe3d4ad801c43.png",
+    "static/media/Background.png": "/static/media/Background.f866db101a1f04173f2b.png",
+    "static/media/section4-dark.png": "/static/media/section4-dark.8cfa860bab78738f0bac.png",
+    "static/media/hero-image-light.png": "/static/media/hero-image-light.3f6deb63fd0d60866dd1.png",
+    "static/media/section4-light.png": "/static/media/section4-light.ee463af74084e9f266bd.png",
+    "static/media/section2-dashboard-dark.png": "/static/media/section2-dashboard-dark.c67bd46be6af0f3ceaca.png",
+    "static/media/image-1.png": "/static/media/image-1.097d6e1cf796560d483e.png",
+    "static/media/image-5.png": "/static/media/image-5.4c994ffc0a53acf22769.png",
+    "static/media/image-3.png": "/static/media/image-3.30363aa5f782413bfcb5.png",
+    "static/media/image-4.png": "/static/media/image-4.11b2b1ce739cbc3ce6ab.png",
+    "static/media/section2-mobile-light.png": "/static/media/section2-mobile-light.a9b22c759d425b530dee.png",
+    "static/media/section2-mobile-dark.png": "/static/media/section2-mobile-dark.55125ebc69955751e942.png",
+    "static/media/image-6.png": "/static/media/image-6.ed516f59d5b3a010f056.png",
+    "static/media/image.png": "/static/media/image.06c352f83efc1e2cd51e.png",
+    "static/media/image-2.png": "/static/media/image-2.252a556c166d81cec14c.png",
+    "index.html": "/index.html",
+    "main.4584f23b.css.map": "/static/css/main.4584f23b.css.map",
+    "main.8eaae188.js.map": "/static/js/main.8eaae188.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4584f23b.css",
+    "static/js/main.8eaae188.js"
+  ]
+}
