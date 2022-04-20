@@ -32,11 +32,11 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import heroImageDark from "assets/img/pro/hero/hero-image-dark.png";
-import heroImageLight from "assets/img/pro/hero/hero-image-light.png";
-import heroBgDark from "assets/img/pro/hero/heroBgDark.png";
 // Assets
-import heroBg from "assets/img/free/hero/heroBg.png";
+import heroImageDark from "assets/img/free/hero/hero-image-dark.png";
+import heroImageLight from "assets/img/free/hero/hero-image-light.png";
+import heroBgDark from "assets/img/free/hero/heroBgDark.png";
+import heroBgLight from "assets/img/free/hero/heroBgLight.png";
 import {
   ChakraLogo,
   FigmaLogo,
@@ -50,7 +50,7 @@ import InnerContent from "layouts/innerContent";
 import React from "react";
 
 export default function Hero() {
-  const background = useColorModeValue(heroBg, heroBgDark);
+  const background = useColorModeValue(heroBgLight, heroBgDark);
   const heroImage = useColorModeValue(heroImageLight, heroImageDark);
   // Chakra Color Mode
   const textColor = useColorModeValue("secondaryGray.900", "white");

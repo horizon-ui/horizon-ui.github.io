@@ -32,11 +32,9 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import dashboardDark from "assets/img/pro/upgrade/section2-dashboard-dark.png";
+import dashboardDark from "assets/img/free/upgrade/section2-dashboard-dark.png";
 // Assets
-import dashboardLight from "assets/img/pro/upgrade/section2-dashboard-light.png";
-import mobileDark from "assets/img/pro/upgrade/section2-mobile-dark.png";
-import mobileLight from "assets/img/pro/upgrade/section2-mobile-light.png";
+import dashboardLight from "assets/img/free/upgrade/section2-dashboard-light.png";
 import { MdChevronRight } from "react-icons/md";
 
 // Custom components
@@ -44,7 +42,6 @@ import InnerContent from "layouts/innerContent";
 
 export default function Fast() {
   const dashboard = useColorModeValue(dashboardLight, dashboardDark);
-  const mobile = useColorModeValue(mobileLight, mobileDark);
   // Chakra Color Mode
   const textColor = useColorModeValue("secondaryGray.900", "white");
   const textColorSecondary = useColorModeValue("secondaryGray.700", "white");

@@ -30,9 +30,9 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 // Assets
-import bgDark from "assets/img/pro/features/bgDark.png";
-import box1 from "assets/img/pro/features/section3-box1.png";
-import box2 from "assets/img/pro/features/section3-box2.png";
+import bgDark from "assets/img/free/features/bgDark.png";
+import box1 from "assets/img/free/features/section3-box1.png";
+import box2 from "assets/img/free/features/section3-box2.png";
 import InnerContent from "layouts/innerContent";
 import React from "react";
 import BigCard from "sections/free/features/components/BigCard";

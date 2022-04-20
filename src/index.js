@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "assets/css/App.css";
-import "mapbox-gl/dist/mapbox-gl.css";
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import AdminLayout from "layouts";
 import { BrowserRouter } from "react-router-dom";

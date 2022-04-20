@@ -4,7 +4,6 @@ import Footer from "components/footer/FooterAdmin.js";
 // Layout components
 import Navbar from "components/navbar/NavbarAdmin.js";
 import { SidebarContext } from "contexts/SidebarContext";
-import "mapbox-gl/dist/mapbox-gl.css";
 import React, { useState } from "react";
 import routes from "routes.js";
 import Free from "views/free";

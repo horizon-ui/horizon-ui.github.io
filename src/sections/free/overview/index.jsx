@@ -22,24 +22,16 @@
 
 import React from "react";
 // Chakra imports
-import {
-  Box,
-  Button,
-  Flex,
-  SimpleGrid,
-  Text,
-  Link,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Button, Flex, Text, Link, useColorModeValue } from "@chakra-ui/react";
 // Assets
 
-import image from "assets/img/pro/overview/image.png";
-import image1 from "assets/img/pro/overview/image-1.png";
-import image2 from "assets/img/pro/overview/image-2.png";
-import image3 from "assets/img/pro/overview/image-3.png";
-import image4 from "assets/img/pro/overview/image-4.png";
-import image5 from "assets/img/pro/overview/image-5.png";
-import image6 from "assets/img/pro/overview/image-6.png";
+import image from "assets/img/free/overview/image.png";
+import image1 from "assets/img/free/overview/image-1.png";
+import image2 from "assets/img/free/overview/image-2.png";
+import image3 from "assets/img/free/overview/image-3.png";
+import image4 from "assets/img/free/overview/image-4.png";
+import image5 from "assets/img/free/overview/image-5.png";
+import image6 from "assets/img/free/overview/image-6.png";
 
 // Custom components
 import InnerContent from "layouts/innerContent";
@@ -49,10 +41,6 @@ export default function Overview() {
   // Chakra Color Mode
   const textColor = useColorModeValue("secondaryGray.900", "white");
   const textColorSecondary = useColorModeValue("secondaryGray.700", "white");
-  const gradient = useColorModeValue(
-    "linear-gradient(360deg, #F7FAFC 17.92%, rgba(247, 250, 252, 0) 100%)",
-    "linear-gradient(360deg, #1C1F39 17.92%, rgba(28, 31, 57, 0) 100%)"
-  );
   return (
     <Flex
       w='100%'
