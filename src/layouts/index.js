@@ -3,6 +3,7 @@ import { Box, Portal, useDisclosure } from "@chakra-ui/react";
 import Footer from "components/footer/FooterAdmin.js";
 // Layout components
 import Navbar from "components/navbar/NavbarAdmin.js";
+import Announcement from "components/announcement";
 import { SidebarContext } from "contexts/SidebarContext";
 import React, { useState } from "react";
 import routes from "routes.js";
@@ -103,6 +104,7 @@ export default function Dashboard(props) {
           transitionDuration='.2s, .2s, .35s'
           transitionProperty='top, bottom, width'
           transitionTimingFunction='linear, linear, ease'>
+          <Announcement />
           <Portal>
             <Box>
               <Navbar

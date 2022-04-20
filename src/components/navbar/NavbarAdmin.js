@@ -42,7 +42,7 @@ export default function AdminNavbar(props) {
   let navbarShadow = "none";
   let navbarBg = useColorModeValue("whiteAlpha.500", "rgba(11,20,55,0.5)");
   let navbarBorder = "transparent";
-  let secondaryMargin = "0px";
+  let secondaryMargin = "90px";
   let paddingX = "15px";
   let gap = "0px";
   let menuBg = useColorModeValue("white", "navy.800");
@@ -57,7 +57,8 @@ export default function AdminNavbar(props) {
       setScrolled(false);
     }
   };
-
+  if (scrolled) secondaryMargin = "0px";
+  else secondaryMargin = "55px";
   return (
     <Box
       position={navbarPosition}

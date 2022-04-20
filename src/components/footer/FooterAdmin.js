@@ -12,7 +12,7 @@ import {
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
-import Bg from "assets/img/layout/Background.png";
+import Bg from "assets/img/free/layout/Background.png";
 import { FaDiscord } from "react-icons/fa";
 import { HorizonUIFree } from "components/icons/Icons";
 import { HSeparator } from "components/separator/Separator";

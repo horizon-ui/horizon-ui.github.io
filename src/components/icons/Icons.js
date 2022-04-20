@@ -776,3 +776,22 @@ export const HorizonUIFree = createIcon({
     </g>
   ),
 });
+export const BrandLogo = createIcon({
+  displayName: "BrandLogo ",
+  viewBox: "0 0 16 16",
+  path: (
+    <svg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+      <path d='M3.938 10.655h8.088v3.516H3.938v-3.516Z' fill='currentColor' />
+      <path
+        d='M12.308 11.393A4.378 4.378 0 0 0 11.04 8.31a4.307 4.307 0 0 0-3.059-1.277A4.31 4.31 0 0 0 4.923 8.31a4.378 4.378 0 0 0-1.267 3.083h8.65Z'
+        fill='currentColor'
+      />
+      <path
+        fill-rule='evenodd'
+        clip-rule='evenodd'
+        d='M8 12.483a4.483 4.483 0 1 0 0-8.966 4.483 4.483 0 0 0 0 8.966ZM8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Z'
+        fill='currentColor'
+      />
+    </svg>
+  ),
+});
