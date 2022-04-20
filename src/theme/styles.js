@@ -83,14 +83,14 @@ export const globalStyles = {
       body: {
         overflowX: "hidden",
         bg: mode("#fdfeff", "#131631")(props),
-        fontFamily: "DM Sans",
+        fontFamily: "Plus Jakarta Sans",
         letterSpacing: "-0.5px",
       },
       input: {
         color: "gray.700",
       },
       html: {
-        fontFamily: "DM Sans",
+        fontFamily: "Plus Jakarta Sans",
       },
     }),
   },
