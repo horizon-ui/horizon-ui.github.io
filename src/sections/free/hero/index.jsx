@@ -77,11 +77,12 @@ export default function Hero() {
         maxW='100%'
         px={{ base: "20px", md: "40px", xl: "0px" }}>
         <Flex maxW='100%' direction='column' width='stretch'>
-          <Box maxW={{ base: "100%", lg: "60s%" }}>
+          <Box maxW='100%'>
             <Text
               color={textColor}
               fontSize={{ base: "26px", md: "38px", xl: "46px" }}
-              mb='30px'>
+              mb='30px'
+              fontWeight='500'>
               Trendiest Open Source
               <br />
               <Text as='span' fontWeight='700'>
