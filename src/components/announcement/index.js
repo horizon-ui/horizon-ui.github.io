@@ -2,7 +2,6 @@
 import React from "react";
 import { Flex, Icon, Text } from "@chakra-ui/react";
 import Bg from "assets/img/free/layout/Announcement.png";
-import Announcement from "components/announcement";
 import { BrandLogo } from "components/icons/Icons";
 export default function Footer() {
   return (
