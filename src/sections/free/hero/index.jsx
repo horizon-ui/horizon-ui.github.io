@@ -174,7 +174,7 @@ export default function Hero() {
       </InnerContent>
       <Image
         src={heroImage}
-        w={{ lg: "770px", xl: "930px" }}
+        w={{ lg: "740px", xl: "930px" }}
         bottom='-20px'
         mt={{ base: "20px", lg: "unset" }}
         right={{

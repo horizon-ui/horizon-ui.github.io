@@ -39,7 +39,7 @@ export default function Footer() {
             color='white'
             lineHeight='100%'
             fontWeight='700'>
-            First version of Horizon UI is here! Try the v1.0.0 now!
+            We just released Horizon UI Components page! Check it out!
           </Text>
         </Flex>
       </Flex>

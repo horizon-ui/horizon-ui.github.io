@@ -115,6 +115,16 @@ export default function AdminNavbar(props) {
         <Flex ms='auto'>
           <Link
             display={{ base: "none", lg: "block" }}
+            href='https://horizon-ui.com/components'
+            color={textColor}
+            fontSize='sm'
+            fontWeight='700'
+            me='30px'
+            my='auto'>
+            Components
+          </Link>
+          <Link
+            display={{ base: "none", lg: "block" }}
             href='https://horizon-ui.com/documentation/docs/introduction'
             color={textColor}
             fontSize='sm'
@@ -194,6 +204,21 @@ export default function AdminNavbar(props) {
               bg={menuBg}
               border='none'>
               <Flex flexDirection='column' p='10px'>
+                <MenuItem
+                  _hover={{ bg: "none" }}
+                  _focus={{ bg: "none" }}
+                  borderRadius='8px'
+                  px='14px'>
+                  <Link
+                    href='https://horizon-ui.com/components'
+                    color={textColor}
+                    fontSize='sm'
+                    fontWeight='500'
+                    me='30px'
+                    my='auto'>
+                    Components
+                  </Link>
+                </MenuItem>
                 <MenuItem
                   _hover={{ bg: "none" }}
                   _focus={{ bg: "none" }}
