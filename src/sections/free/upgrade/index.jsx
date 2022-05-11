@@ -79,13 +79,18 @@ export default function Fast() {
             </Text>
             <Text
               color={textColor}
-              fontWeight='700'
+              fontWeight='800'
               fontSize={{ base: "28px", md: "48px" }}
               mb={{ base: "14px", lg: "30px" }}>
               Improve your development process and start doing more with Horizon
               UI PRO
             </Text>
-            <Text mb='30px' color={textColorSecondary} fontSize='lg' w='100%'>
+            <Text
+              mb='30px'
+              color={textColorSecondary}
+              alignSelf='center'
+              fontSize='lg'
+              w='80%'>
               Save hundreds of hours trying to create and develop a dashboard
               from scratch. The fastest, most responsive & trendiest admin
               template is here. Seriously.
@@ -94,7 +99,8 @@ export default function Fast() {
               <Flex me={{ base: "20px", md: "50px" }} direction='column'>
                 <Text
                   color={textColor}
-                  fontWeight='700'
+                  fontWeight='800'
+                  mb='10px'
                   fontSize={{ base: "30px", md: "38px" }}
                   lineHeight='100%'>
                   400+
@@ -110,7 +116,8 @@ export default function Fast() {
               <Flex me='50px' direction='column'>
                 <Text
                   color={textColor}
-                  fontWeight='700'
+                  fontWeight='800'
+                  mb='10px'
                   fontSize={{ base: "30px", md: "38px" }}
                   lineHeight='100%'>
                   40+
@@ -126,7 +133,8 @@ export default function Fast() {
               <Flex direction='column'>
                 <Text
                   color={textColor}
-                  fontWeight='700'
+                  fontWeight='800'
+                  mb='10px'
                   fontSize={{ base: "30px", md: "38px" }}
                   lineHeight='100%'>
                   10+

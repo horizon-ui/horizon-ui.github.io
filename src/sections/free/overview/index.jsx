@@ -69,12 +69,12 @@ export default function Overview() {
             </Text>
             <Text
               color={textColor}
-              fontWeight='700'
+              fontWeight='800'
               fontSize={{ base: "28px", md: "48px" }}
-              mb='30px'>
+              mb='20px'>
               Chakra UI admin template pages
             </Text>
-            <Text color={textColorSecondary} fontSize='lg' w='100%'>
+            <Text color={textColorSecondary} fontSize='lg' w='100%' mb='20px'>
               Improve your development process with a set of fully coded pages!
               Trendy page categories like NFTs page and many more are available
               to save your time!{" "}

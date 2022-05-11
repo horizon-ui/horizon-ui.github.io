@@ -29,6 +29,7 @@ import {
   Icon,
   Grid,
   Image,
+  Avatar,
   Text,
   Link,
   useColorModeValue,
@@ -44,6 +45,7 @@ import { FigmaLogo, ProductHuntLogo } from "components/icons/Icons";
 
 // Custom components
 import Card from "components/card/Card";
+import avatar from "assets/img/free/numbers/Image-4.png";
 import InnerContent from "layouts/innerContent";
 
 export default function GetStarted() {
@@ -69,7 +71,7 @@ export default function GetStarted() {
           <Flex me='80px' direction='column' width='stretch'>
             <Box my='auto'>
               <Text
-                fontWeight='700'
+                fontWeight='800'
                 letterSpacing='2px'
                 bg='linear-gradient(135deg, #868CFF 0%, #4318FF 100%)'
                 bgClip='text'
@@ -79,7 +81,7 @@ export default function GetStarted() {
                 HORIZON UI IN NUMBERS
               </Text>
               <Text
-                fontWeight='700'
+                fontWeight='800'
                 color={textColor}
                 fontSize={{ base: "26px", md: "48px" }}
                 lineHeight={{ base: "34px", md: "60px" }}
@@ -89,14 +91,39 @@ export default function GetStarted() {
               </Text>
               <Text
                 color={textColorSecondary}
-                fontSize='lg'
+                fontSize='md'
                 w={{ base: "90%", md: "100%" }}
+                lineHeight='28px'
                 mb='30px'>
                 "A useful admin template that perfectly combines the UI with UX.
                 The diversity of screens (NFT Page, Car Interface, Smart Home,
                 etc.) helps the user reduce many workdays. For sure, you can
                 broaden your web design horizons with Horizon!"
               </Text>
+              <Flex alignItems='center'>
+                <Avatar h='48px' w='48px' me='20px' src={avatar} />
+                <Box>
+                  <Text color={textColor} fontSize='md' fontWeight='800'>
+                    Elisa Paduraru
+                  </Text>
+                  <Flex align='center'>
+                    <Text
+                      color={textColorSecondary}
+                      fontSize='sm'
+                      fontWeight='500'
+                      me='5px'>
+                      Chief Design Officer at
+                    </Text>
+                    <Link
+                      href='https://creative-tim.com/?ref=horizon-ui.com'
+                      color={brandColor}
+                      fontWeight='700'
+                      fontSize='sm'>
+                      Creative Tim
+                    </Link>
+                  </Flex>
+                </Box>
+              </Flex>
             </Box>
           </Flex>
           <Flex ms='auto' direction='column' width='stretch'>
@@ -115,7 +142,7 @@ export default function GetStarted() {
                   </Flex>
                   <Box me='auto'>
                     <Text
-                      fontWeight='700'
+                      fontWeight='800'
                       mb='10px'
                       color={textColor}
                       fontSize={{ base: "22px", md: "34px" }}
@@ -124,7 +151,7 @@ export default function GetStarted() {
                       490+
                     </Text>
                     <Text
-                      fontWeight='500'
+                      fontWeight='700'
                       color={textColorSecondary}
                       fontSize={{ base: "sm", md: "sm" }}
                       lineHeight={{ base: "100%", md: "100%" }}
@@ -133,6 +160,7 @@ export default function GetStarted() {
                     </Text>
                   </Box>
                   <GitHubButton
+                    w='200px'
                     size='large'
                     href='https://github.com/horizon-ui/horizon-ui-chakra'
                     data-icon='octicon-star'
@@ -156,16 +184,16 @@ export default function GetStarted() {
                   </Flex>
                   <Box me='auto'>
                     <Text
-                      fontWeight='700'
+                      fontWeight='800'
                       mb='10px'
                       color={textColor}
                       fontSize={{ base: "22px", md: "34px" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       maxW={{ base: "80%", md: "unset" }}>
-                      3,800+
+                      4,000+
                     </Text>
                     <Text
-                      fontWeight='500'
+                      fontWeight='700'
                       color={textColorSecondary}
                       fontSize={{ base: "sm", md: "sm" }}
                       lineHeight={{ base: "100%", md: "100%" }}
@@ -176,8 +204,8 @@ export default function GetStarted() {
                   <Link
                     w='max-content'
                     color={brandColor}
-                    fontWeight='500'
-                    href=''
+                    fontWeight='700'
+                    href='https://www.figma.com/community/file/1098131983383434513/Horizon-UI---Trendiest-Open-Source-Admin-Template'
                     fontSize='sm'
                     whiteSpace='nowrap'
                     textDecor='underline'>
@@ -199,7 +227,7 @@ export default function GetStarted() {
                   </Flex>
                   <Box me='auto'>
                     <Text
-                      fontWeight='700'
+                      fontWeight='800'
                       mb='10px'
                       color={textColor}
                       fontSize={{ base: "22px", md: "34px" }}
@@ -208,7 +236,7 @@ export default function GetStarted() {
                       40+
                     </Text>
                     <Text
-                      fontWeight='500'
+                      fontWeight='700'
                       color={textColorSecondary}
                       fontSize={{ base: "sm", md: "sm" }}
                       lineHeight={{ base: "100%", md: "100%" }}
@@ -219,8 +247,8 @@ export default function GetStarted() {
                   <Link
                     w='max-content'
                     color={brandColor}
-                    fontWeight='500'
-                    href=''
+                    fontWeight='700'
+                    href='https://discord.gg/f6tEKFBd4m'
                     fontSize='sm'
                     whiteSpace='nowrap'
                     textDecor='underline'>
@@ -247,7 +275,7 @@ export default function GetStarted() {
                   </Flex>
                   <Box me='auto'>
                     <Text
-                      fontWeight='700'
+                      fontWeight='800'
                       mb='10px'
                       color={textColor}
                       fontSize={{ base: "22px", md: "34px" }}
@@ -256,7 +284,7 @@ export default function GetStarted() {
                       #3 🏆
                     </Text>
                     <Text
-                      fontWeight='500'
+                      fontWeight='700'
                       color={textColorSecondary}
                       fontSize={{ base: "sm", md: "sm" }}
                       lineHeight={{ base: "100%", md: "100%" }}
@@ -272,7 +300,11 @@ export default function GetStarted() {
                     <img
                       src='https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=342582&theme=light&period=daily'
                       alt='Horizon&#0032;UI - Trendiest&#0032;open&#0045;source&#0032;React&#0032;admin&#0032;template | Product Hunt'
-                      style={{ width: "250px", height: "54px" }}
+                      style={{
+                        width: "250px",
+                        height: "54px",
+                        pointerEvents: "none",
+                      }}
                       width='250'
                       height='54'
                     />

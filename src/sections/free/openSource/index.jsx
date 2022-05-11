@@ -78,7 +78,7 @@ export default function GetStarted() {
                 OPEN SOURCE ADMIN TEMPLATE
               </Text>
               <Text
-                fontWeight='700'
+                fontWeight='800'
                 color={textColor}
                 fontSize={{ base: "26px", md: "48px" }}
                 lineHeight={{ base: "34px", md: "60px" }}

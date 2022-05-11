@@ -72,7 +72,7 @@ export default function GetStarted() {
                 GET STARTED WITH HORIZON
               </Text>
               <Text
-                fontWeight='700'
+                fontWeight='800'
                 color={textColor}
                 fontSize={{ base: "26px", md: "48px" }}
                 lineHeight={{ base: "34px", md: "60px" }}
@@ -92,9 +92,10 @@ export default function GetStarted() {
                 <Flex me={{ base: "20px", md: "50px" }} direction='column'>
                   <Text
                     color={textColor}
-                    fontWeight='700'
+                    fontWeight='800'
                     fontSize={{ base: "30px", md: "38px" }}
-                    lineHeight='100%'>
+                    lineHeight='100%'
+                    mb='10px'>
                     70+
                   </Text>
                   <Text
@@ -108,9 +109,10 @@ export default function GetStarted() {
                 <Flex me='50px' direction='column'>
                   <Text
                     color={textColor}
-                    fontWeight='700'
+                    fontWeight='800'
                     fontSize={{ base: "30px", md: "38px" }}
-                    lineHeight='100%'>
+                    lineHeight='100%'
+                    mb='10px'>
                     7+
                   </Text>
                   <Text

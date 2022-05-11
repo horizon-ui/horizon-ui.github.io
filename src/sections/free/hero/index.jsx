@@ -85,7 +85,7 @@ export default function Hero() {
               fontWeight='500'>
               Trendiest Open Source
               <br />
-              <Text as='span' fontWeight='700'>
+              <Text as='span' fontWeight='800'>
                 Admin Template for React
               </Text>
             </Text>
