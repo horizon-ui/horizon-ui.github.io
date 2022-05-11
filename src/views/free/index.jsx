@@ -28,6 +28,7 @@ import Hero from "sections/free/hero";
 import Upgrade from "sections/free/upgrade";
 import GetStarted from "sections/free/started";
 import OpenSource from "sections/free/openSource";
+import Numbers from "sections/free/numbers";
 import Overview from "sections/free/overview";
 export default function Default() {
   return (
@@ -36,6 +37,7 @@ export default function Default() {
       <Overview />
       <GetStarted />
       <OpenSource />
+      <Numbers />
       <Upgrade />
     </Flex>
   );
