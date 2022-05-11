@@ -47,6 +47,7 @@ import { FigmaLogo, ProductHuntLogo } from "components/icons/Icons";
 import Card from "components/card/Card";
 import avatar from "assets/img/free/numbers/Image-4.png";
 import InnerContent from "layouts/innerContent";
+import { HSeparator } from "components/separator/Separator";
 
 export default function GetStarted() {
   const image = useColorModeValue(imageLight, imageDark);
@@ -59,16 +60,20 @@ export default function GetStarted() {
       w='100%'
       direction={{ base: "column" }}
       pt={{ base: "100px", md: "120px", xl: "140px" }}
-      pb={{ base: "20px", md: "0px", xl: "100px" }}
       overflow='hidden'
       bgSize='cover'
       position='relative'>
       <InnerContent px={{ base: "20px", md: "40px", xl: "0px" }}>
         <Flex
+          pb={{ base: "70px", lg: "0px" }}
           direction={{ base: "column", lg: "row" }}
           width='100%'
           justify='space-between'>
-          <Flex me='80px' direction='column' width='stretch'>
+          <Flex
+            me={{ lg: "80px" }}
+            mb={{ base: "40px", lg: "0px" }}
+            direction='column'
+            width='stretch'>
             <Box my='auto'>
               <Text
                 fontWeight='800'
@@ -92,7 +97,7 @@ export default function GetStarted() {
               <Text
                 color={textColorSecondary}
                 fontSize='md'
-                w={{ base: "90%", md: "100%" }}
+                w='100%'
                 lineHeight='28px'
                 mb='30px'>
                 "A useful admin template that perfectly combines the UI with UX.
@@ -127,20 +132,29 @@ export default function GetStarted() {
             </Box>
           </Flex>
           <Flex ms='auto' direction='column' width='stretch'>
-            <Box my='auto'>
-              <Card minW='545px' p='30px' mb='20px' ms='30px'>
-                <Flex align='center'>
+            <Box maxW='100%' my='auto'>
+              <Card
+                maxW={{ base: "100%", md: "unset" }}
+                minW={{ base: "200px", lg: "500px", xl: "545px" }}
+                p='30px'
+                mb='20px'
+                ms={{ base: "0px", xl: "30px" }}>
+                <Flex align='center' flexWrap={{ base: "wrap", md: "unset" }}>
                   <Flex
+                    mb={{ base: "20px", md: "unset" }}
                     me='20px'
                     bg='linear-gradient(135deg, #868CFF 0%, #4318FF 100%)'
                     borderRadius='70px'
                     align='center'
                     justify='center'
-                    w='74px'
-                    h='74px'>
-                    <Icon as={IoLogoGithub} h='42px' w='42px' color='white' />
+                    w={{ base: "50px", md: "74px" }}
+                    h={{ base: "50px", md: "74px" }}
+                    minW={{ base: "50px", md: "74px" }}>
+                    <Icon as={IoLogoGithub} h='32px' w='32px' color='white' />
                   </Flex>
-                  <Box me='auto'>
+                  <Box
+                    me={{ base: "40px", md: "auto" }}
+                    mb={{ base: "20px", md: "unset" }}>
                     <Text
                       fontWeight='800'
                       mb='10px'
@@ -170,17 +184,23 @@ export default function GetStarted() {
                   </GitHubButton>
                 </Flex>
               </Card>
-              <Card minW='545px' p='30px' mb='20px' me='30px'>
-                <Flex align='center'>
+              <Card
+                maxW={{ base: "100%", md: "unset" }}
+                minW={{ base: "200px", lg: "500px", xl: "545px" }}
+                p='30px'
+                mb='20px'
+                me={{ base: "0px", xl: "30px" }}>
+                <Flex align='center' flexWrap={{ base: "wrap", md: "unset" }}>
                   <Flex
                     me='20px'
                     bg='linear-gradient(90deg, #4481EB 0%, #04BEFE 100%)'
                     borderRadius='70px'
                     align='center'
                     justify='center'
-                    w='74px'
-                    h='74px'>
-                    <Icon as={FigmaLogo} w='25px' h='35px' color='white' />
+                    w={{ base: "50px", md: "74px" }}
+                    h={{ base: "50px", md: "74px" }}
+                    minW={{ base: "50px", md: "74px" }}>
+                    <Icon as={FigmaLogo} w='17px' h='26px' color='white' />
                   </Flex>
                   <Box me='auto'>
                     <Text
@@ -202,6 +222,7 @@ export default function GetStarted() {
                     </Text>
                   </Box>
                   <Link
+                    mt={{ base: "20px", md: "unset" }}
                     w='max-content'
                     color={brandColor}
                     fontWeight='700'
@@ -213,17 +234,23 @@ export default function GetStarted() {
                   </Link>
                 </Flex>
               </Card>
-              <Card minW='545px' p='30px' mb='20px' me='30px'>
-                <Flex align='center'>
+              <Card
+                maxW={{ base: "100%", md: "unset" }}
+                minW={{ base: "200px", lg: "500px", xl: "545px" }}
+                p='30px'
+                mb='20px'
+                me={{ base: "0px", xl: "30px" }}>
+                <Flex align='center' flexWrap={{ base: "wrap", md: "unset" }}>
                   <Flex
                     me='20px'
                     bg='linear-gradient(109.6deg, #FF9966 17.44%, #FF5E62 78.63%)'
                     borderRadius='70px'
                     align='center'
                     justify='center'
-                    w='74px'
-                    h='74px'>
-                    <Icon as={FaDiscord} w='40px' h='30px' color='white' />
+                    w={{ base: "50px", md: "74px" }}
+                    h={{ base: "50px", md: "74px" }}
+                    minW={{ base: "50px", md: "74px" }}>
+                    <Icon as={FaDiscord} w='28px' h='22px' color='white' />
                   </Flex>
                   <Box me='auto'>
                     <Text
@@ -245,6 +272,7 @@ export default function GetStarted() {
                     </Text>
                   </Box>
                   <Link
+                    mt={{ base: "20px", md: "unset" }}
                     w='max-content'
                     color={brandColor}
                     fontWeight='700'
@@ -256,20 +284,25 @@ export default function GetStarted() {
                   </Link>
                 </Flex>
               </Card>
-              <Card minW='545px' p='30px' ms='30px'>
-                <Flex align='center'>
+              <Card
+                maxW={{ base: "100%", md: "unset" }}
+                minW={{ base: "200px", lg: "500px", xl: "545px" }}
+                p='30px'
+                ms={{ base: "0px", xl: "30px" }}>
+                <Flex align='center' flexWrap={{ base: "wrap", md: "unset" }}>
                   <Flex
                     me='20px'
                     bg='linear-gradient(111.8deg, #FFE259 16.38%, #FFA751 77.86%)'
                     borderRadius='70px'
                     align='center'
                     justify='center'
-                    w='74px'
-                    h='74px'>
+                    w={{ base: "50px", md: "74px" }}
+                    h={{ base: "50px", md: "74px" }}
+                    minW={{ base: "50px", md: "74px" }}>
                     <Icon
                       as={ProductHuntLogo}
-                      w='29px'
-                      h='35px'
+                      w='18px'
+                      h='21px'
                       color='white'
                     />
                   </Flex>
@@ -293,28 +326,41 @@ export default function GetStarted() {
                       ON PRODUCT HUNT
                     </Text>
                   </Box>
-                  <a
-                    href='https://www.producthunt.com/posts/horizon-ui?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-horizon&#0045;ui'
-                    target='_blank'
-                    style={{ transform: "scale(0.8) translate(30px,0px)" }}>
-                    <img
-                      src='https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=342582&theme=light&period=daily'
-                      alt='Horizon&#0032;UI - Trendiest&#0032;open&#0045;source&#0032;React&#0032;admin&#0032;template | Product Hunt'
-                      style={{
-                        width: "250px",
-                        height: "54px",
-                        pointerEvents: "none",
-                      }}
-                      width='250'
-                      height='54'
-                    />
-                  </a>
+                  <Box
+                    mt={{ base: "20px", md: "unset" }}
+                    transform={{
+                      base: "scale(0.8) translate(-30px,0px)",
+                      md: "scale(0.8) translate(30px,0px)",
+                    }}>
+                    <a
+                      href='https://www.producthunt.com/posts/horizon-ui?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-horizon&#0045;ui'
+                      target='_blank'>
+                      <img
+                        src='https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=342582&theme=light&period=daily'
+                        alt='Horizon&#0032;UI - Trendiest&#0032;open&#0045;source&#0032;React&#0032;admin&#0032;template | Product Hunt'
+                        style={{
+                          width: "250px",
+                          height: "54px",
+                          pointerEvents: "none",
+                        }}
+                        width='250'
+                        height='54'
+                      />
+                    </a>
+                  </Box>
                 </Flex>
               </Card>
             </Box>
           </Flex>
         </Flex>
       </InnerContent>
+      <HSeparator
+        w='100%'
+        mt={{ base: "20px", md: "20px", xl: "140px" }}
+        maxW='calc(100% - 40px)'
+        w='1170px'
+        mx={{ base: "20px", md: "auto" }}
+      />
     </Flex>
   );
 }
