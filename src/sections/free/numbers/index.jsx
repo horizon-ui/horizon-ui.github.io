@@ -1,3 +1,4 @@
+/*eslint-disable*/
 /*!
   _   _  ___  ____  ___ ________  _   _   _   _ ___   ____  ____   ___  
  | | | |/ _ \|  _ \|_ _|__  / _ \| \ | | | | | |_ _| |  _ \|  _ \ / _ \ 
@@ -25,10 +26,7 @@ import React from "react";
 import {
   Box,
   Flex,
-  Button,
   Icon,
-  Grid,
-  Image,
   Avatar,
   Text,
   Link,
@@ -36,8 +34,6 @@ import {
 } from "@chakra-ui/react";
 
 // Assets
-import imageDark from "assets/img/free/started/section4-dark.png";
-import imageLight from "assets/img/free/started/section4-light.png";
 import GitHubButton from "react-github-btn";
 import { IoLogoGithub } from "react-icons/io";
 import { FaDiscord } from "react-icons/fa";
@@ -50,7 +46,6 @@ import InnerContent from "layouts/innerContent";
 import { HSeparator } from "components/separator/Separator";
 
 export default function GetStarted() {
-  const image = useColorModeValue(imageLight, imageDark);
   // Chakra Color Mode
   const textColor = useColorModeValue("secondaryGray.900", "white");
   const textColorSecondary = useColorModeValue("secondaryGray.700", "white");
