@@ -111,7 +111,9 @@ export default function AdminNavbar(props) {
         }}
         alignItems='center'
         mb={gap}>
-        <Icon as={HorizonUIFree} color={textColor} w='153px' h='25px' />
+        <Link href='https://horizon-ui.com'>
+          <Icon as={HorizonUIFree} color={textColor} w='153px' h='25px' />
+        </Link>
         <Flex ms='auto'>
           <Link
             display={{ base: "none", lg: "block" }}

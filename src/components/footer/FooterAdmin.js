@@ -115,7 +115,9 @@ export default function Footer() {
             base: "100%",
             lg: "360px",
           }}>
-          <HorizonUIFree w='138px' h='24px' mb='26px' color={textColor} />
+          <Link href='https://horizon-ui.com'>
+            <HorizonUIFree w='138px' h='24px' mb='26px' color={textColor} />
+          </Link>
           <Text
             lineHeight='180%'
             fontSize='md'
