@@ -108,7 +108,7 @@ export default function Hero() {
                   me={{ base: "20px", md: "30px" }}
                   w='160px'
                   h='54px'>
-                  Get started
+                  Download for Free
                   <Icon as={MdChevronRight} color='white' h='16px' w='16px' />
                 </Button>
               </Link>
