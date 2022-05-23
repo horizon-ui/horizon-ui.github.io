@@ -202,11 +202,11 @@ export default function Footer() {
               Support
             </Link>
             <Link
-              href=''
+              href='https://feedback.horizon-ui.com/'
               fontSize='md'
               color={textColorSecondary}
               fontWeight='400'>
-              FAQs
+              Roadmap
             </Link>
           </Flex>
           <Flex
