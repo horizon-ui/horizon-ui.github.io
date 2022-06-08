@@ -87,7 +87,7 @@ export default function Overview() {
         <Flex
           mb='90px'
           justify='center'
-          w={{ base: "72%", md: "100%" }}
+          w={{ base: "72%", md: "90%" }}
           flexWrap='wrap'>
           <PageCard
             mb='20px'
@@ -98,35 +98,28 @@ export default function Overview() {
           />
           <PageCard
             mb='20px'
-            me={{ base: "0px", lg: "20px" }}
+            me={{ base: "0px", xl: "20px" }}
             title='NFT Marketplace'
             image={image1}
             link='https://horizon-ui.com/horizon-ui-chakra/#/admin/nft-marketplace'
           />
           <PageCard
             mb='20px'
-            me={{ base: "0px", md: "20px" }}
+            me={{ base: "0px", md: "20px", xl: "0px" }}
             title='Tables Page'
             image={image2}
             link='https://horizon-ui.com/horizon-ui-chakra/#/admin/data-tables'
           />
           <PageCard
-            me={{ base: "0px", lg: "20px", xl: "20px" }}
-            mb='20px'
-            title='Kanban Page'
-            image={image3}
-            link='https://horizon-ui.com/horizon-ui-chakra/#/admin/kanban'
-          />
-          <PageCard
             mb={{ base: "20px", md: "20px", lg: "0px" }}
-            me={{ base: "0px", md: "20px" }}
+            me={{ base: "0px", md: "0px", xl: "20px" }}
             title='Profile Overview'
             image={image4}
             link='https://horizon-ui.com/horizon-ui-chakra/#/admin/profile'
           />
           <PageCard
             mb={{ base: "20px", md: "0px" }}
-            me={{ base: "0px", lg: "20px" }}
+            me={{ base: "0px", md: "20px", lg: "20px" }}
             title='Sign In Page'
             image={image5}
             link='https://horizon-ui.com/horizon-ui-chakra/#/auth/sign-in'
