@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.41cebefd.css",
-    "main.js": "/static/js/main.2affff3e.js",
+    "main.js": "/static/js/main.bdc9e9b3.js",
     "static/media/heroBgDark.png": "/static/media/heroBgDark.836e6f0ad260103f744f.png",
     "static/media/section2-dashboard-dark.png": "/static/media/section2-dashboard-dark.42c330998aa47931f408.png",
     "static/media/section2-dashboard-light.png": "/static/media/section2-dashboard-light.90a1a2df2e174863be7a.png",
@@ -11,7 +11,6 @@
     "static/media/hero-image-light.png": "/static/media/hero-image-light.3f6deb63fd0d60866dd1.png",
     "static/media/section4-dark.png": "/static/media/section4-dark.441310e57614e4f2b02f.png",
     "static/media/section4-light.png": "/static/media/section4-light.741e61228459cb8532b7.png",
-    "static/media/Announcement.png": "/static/media/Announcement.9ecd2d0d115c15bb1d26.png",
     "static/media/image-1.png": "/static/media/image-1.097d6e1cf796560d483e.png",
     "static/media/image-5.png": "/static/media/image-5.4c994ffc0a53acf22769.png",
     "static/media/image-3.png": "/static/media/image-3.30363aa5f782413bfcb5.png",
@@ -21,10 +20,10 @@
     "static/media/image-2.png": "/static/media/image-2.252a556c166d81cec14c.png",
     "index.html": "/index.html",
     "main.41cebefd.css.map": "/static/css/main.41cebefd.css.map",
-    "main.2affff3e.js.map": "/static/js/main.2affff3e.js.map"
+    "main.bdc9e9b3.js.map": "/static/js/main.bdc9e9b3.js.map"
   },
   "entrypoints": [
     "static/css/main.41cebefd.css",
-    "static/js/main.2affff3e.js"
+    "static/js/main.bdc9e9b3.js"
   ]
 }
