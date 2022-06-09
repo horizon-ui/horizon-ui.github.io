@@ -1,17 +1,16 @@
 /*eslint-disable*/
 import React from "react";
 import { Flex, Icon, Text, Link } from "@chakra-ui/react";
-import Bg from "assets/img/free/layout/Announcement.png";
 import { BrandLogo } from "components/icons/Icons";
 export default function Footer() {
   return (
-    <Link href='https://feedback.horizon-ui.com/'>
+    <Link href='https://horizon-ui.com/pro?ref=horizon-announcement'>
       <Flex
         px={{
           base: "20px",
           xl: "unset",
         }}
-        bg={`url(${Bg})`}
+        bg="linear-gradient(269.77deg, #FFA26E -5.11%, #FF18F6 29.39%, #4318FF 69.57%, #00E0FF 100.59%)"
         w='100%'
         bgPosition='center'
         h={{ base: "60px", lg: "60px" }}
@@ -22,9 +21,7 @@ export default function Footer() {
           align='center'
           w='100%'
           maxW='1170px'
-          mx='auto'
-          justifyContent='space-between'
-          align='center'>
+          justifyContent='space-between'>
           <Flex flexDirection='row' mx='auto'>
             <Icon
               me={{ base: "10px", lg: "10px" }}
@@ -37,10 +34,10 @@ export default function Footer() {
               fontSize={{ base: "sm", md: "sm" }}
               mb='unset'
               color='white'
-              lineHeight='100%'
+              lineHeight='120%'
+              textAlign='center'
               fontWeight='700'>
-              We've just released the Horizon UI's feedback hub! A better way to
-              submit your feedback and ideas! 🏆
+              SUMMER PROMOTION | Discounts up to -34% off at Horizon UI PRO
             </Text>
           </Flex>
         </Flex>
