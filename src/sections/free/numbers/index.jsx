@@ -157,7 +157,7 @@ export default function GetStarted() {
                       fontSize={{ base: "22px", md: "34px" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       maxW={{ base: "80%", md: "unset" }}>
-                      590+
+                      850+
                     </Text>
                     <Text
                       fontWeight='700'
@@ -205,7 +205,7 @@ export default function GetStarted() {
                       fontSize={{ base: "22px", md: "34px" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       maxW={{ base: "80%", md: "unset" }}>
-                      5,000+
+                      6,000+
                     </Text>
                     <Text
                       fontWeight='700'
@@ -255,7 +255,7 @@ export default function GetStarted() {
                       fontSize={{ base: "22px", md: "34px" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       maxW={{ base: "80%", md: "unset" }}>
-                      40+
+                      70+
                     </Text>
                     <Text
                       fontWeight='700'

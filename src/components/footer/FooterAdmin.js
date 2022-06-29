@@ -7,6 +7,7 @@ import {
   Icon,
   List,
   ListItem,
+  Badge,
   Text,
   Button,
   useColorMode,
@@ -18,10 +19,11 @@ import { HorizonUIFree } from "components/icons/Icons";
 import { HSeparator } from "components/separator/Separator";
 export default function Footer() {
   const textColor = useColorModeValue("secondaryGray.900", "white");
-  const textColorSecondary = useColorModeValue("secondaryGray.700", "#A0AEC0");
+  const textColorSecondary = useColorModeValue("secondaryGray.700", "white");
   const textColorSimmmple = useColorModeValue("secondaryGray.700", "white");
   const brandColor = useColorModeValue("brand.500", "white");
   const { toggleColorMode } = useColorMode();
+  const textFooter = useColorModeValue("secondaryGray.900", "white");
   return (
     <Flex
       zIndex='3'
@@ -130,15 +132,15 @@ export default function Footer() {
         </Box>
         <Flex
           direction={{ base: "column", md: "row" }}
-          w={{ base: "100%", md: "100%", lg: "100%", xl: "650px" }}>
+          w={{ base: "100%", md: "100%", lg: "100%", xl: "690px" }}>
           <Flex
             direction='column'
-            me={{ base: "20px", md: "80px", lg: "50px", xl: "60px" }}
+            me={{ base: "20px", md: "60px", lg: "14px", xl: "60px" }}
             mt={{ base: "30px", md: "40px", lg: "0px" }}>
             <Text
               mb='20px'
               fontSize='lg'
-              color={textColorSecondary}
+              color={textFooter}
               fontWeight='700'>
               Resources
             </Text>
@@ -150,6 +152,17 @@ export default function Footer() {
               mb='20px'>
               Free version
             </Link>
+            <Flex>
+              <Link
+                href='https://horizon-ui.com/affiliates'
+                fontSize='md'
+                color={textColorSecondary}
+                fontWeight='400'
+                mb='20px'>
+                Affiliate
+              <Badge colorScheme='green' ms='6px' py='2px' px='6px' borderRadius='10px'>Earn 30%</Badge>
+              </Link>
+            </Flex>
             <Link
               href='https://simmmple.com?ref=horizon-ui'
               fontSize='md'
@@ -173,7 +186,7 @@ export default function Footer() {
             <Text
               mb='20px'
               fontSize='lg'
-              color={textColorSecondary}
+              color={textFooter}
               fontWeight='700'>
               Help & Support
             </Text>
@@ -216,7 +229,7 @@ export default function Footer() {
             <Text
               mb='20px'
               fontSize='lg'
-              color={textColorSecondary}
+              color={textFooter}
               fontWeight='700'>
               Social Media
             </Text>
@@ -256,7 +269,7 @@ export default function Footer() {
             <Text
               mb='20px'
               fontSize='lg'
-              color={textColorSecondary}
+              color={textFooter}
               fontWeight='700'>
               Legal Resources
             </Text>
